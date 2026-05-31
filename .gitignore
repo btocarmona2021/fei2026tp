@@ -1,8 +1,11 @@
-# Archivos de entorno
-.env-dist
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Gitignore del proyecto
+.gitgnore
 
+# Archivos de entorno
+.env
+
+#Archivos de apuntes
+apuntes.md
+
+# Carpetas de volumenes
+postgres_data/
