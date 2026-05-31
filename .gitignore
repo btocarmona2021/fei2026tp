@@ -1,0 +1,8 @@
+# Archivos de entorno
+.env-dist
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
