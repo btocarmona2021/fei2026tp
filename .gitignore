@@ -7,5 +7,9 @@
 #Archivos de apuntes
 apuntes.md
 
+#Archivos temporales
+*.pyc
+__pycache__/
+
 # Carpetas de volumenes
 postgres_data/
