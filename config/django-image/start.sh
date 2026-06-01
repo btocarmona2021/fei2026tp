@@ -11,6 +11,7 @@ echo "Base de datos disponible."
 if [ ! -f "manage.py" ]; then
     echo "No se encontró un proyecto Django. Creando proyecto inicial..."
     django-admin startproject practico01 .
+    chown -R $(stat -c '%u:%g' /app) /app 2>/dev/null || true
 fi
 
 # generor y aplicar migraciones
@@ -26,4 +27,5 @@ fi
 
 # 4. Iniciar el servidor de desarrollo de Django
 echo "Arrancando el servidor de desarrollo en el puerto 8000..."
+chown -R $(stat -c '%u:%g' /app) /app 2>/dev/null || true
 exec python manage.py runserver 0.0.0.0:8000
